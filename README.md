@@ -29,6 +29,28 @@ npm run build
 
 The production bundle is written to `build/`.
 
+## Run with Docker
+
+Build the production app in a clean Node `22.23.3` image. The build uses
+`package-lock.json` through `npm ci` and checks the version pinned in `.nvmrc`.
+
+```bash
+docker build -t shortsjarvis .
+docker run --rm -p 4173:4173 shortsjarvis
+```
+
+Open `http://localhost:4173` to view the production app.
+
+To run the complete test suite without network access or external APIs after
+the image has been built:
+
+```bash
+docker run --rm --network none shortsjarvis npm run test:offline
+```
+
+`npm run test:offline` only runs local Node tests against project files. It
+does not make network requests.
+
 ## Current scope
 
 Phase 3 provides a responsive creator dashboard and a focused idea-to-plan flow.

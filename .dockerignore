@@ -1,0 +1,9 @@
+.git/
+.vite-cache/
+build/
+dist/
+node_modules/
+src.preexisting/
+.gitignore.preexisting
+.env
+*.local
