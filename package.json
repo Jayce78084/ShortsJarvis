@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node --test"
+    "test": "node --test tests/smoke.test.js tests-phase2/*.test.js tests-phase3/*.test.js"
   },
   "devDependencies": {
     "vite": "^7.1.7"
