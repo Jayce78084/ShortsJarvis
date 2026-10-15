@@ -1,0 +1,16 @@
+{
+  "name": "shortsjarvis",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A focused planning workspace for short-form video creators.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
